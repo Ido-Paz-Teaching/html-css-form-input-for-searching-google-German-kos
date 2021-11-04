@@ -1,0 +1,4 @@
+label, input, select, option{
+    display: block;
+    margin: 5px;
+}

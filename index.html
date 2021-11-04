@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="http://www.google.com/search?" target="_blank">
+            <label for="q">Search Text:</label>
+            <input type="text" id="q" name="q" required>
+            <label for="as_qdr">Show only pages that were updated in the past</label>
+            <select id="as_qdr" name="as_qdr">
+                <option value="d">24 hours</option>
+                <option value="w">seven days</option>
+                <option value="m">month</option>
+                <option value="m2">two months</option>
+                <option value="y">year</option>
+            </select>
+            <label for="lr">Show only pages written in Hebrew: </label>
+            <input type="checkbox" value ="lang_iw" id="lr" name="lr">
+            <label for="num">Number of results</label>
+            <input type="number" name="num" id="num" max="100" min="1">
+            <input type="submit" value="Ask Google" style="background-color: green; border-radius: 25px; " >
+        </form>
+    </body>
+</html>
